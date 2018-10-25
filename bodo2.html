@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<TITLE>MangaNdi-HOME</TITLE>
+	<meta charset="utf-8">
+
+		<style>
+
+		div.gallery {
+			margin: 5px;
+			border : 1px solid #ccc;
+			float : right;
+			width :180px;
+
+
+		}
+
+		#box2{
+			width: 1299px;
+			height: 50px;
+			background: #bdbdbd;
+			font-size: 30px;
+			box-sizing: border-box;
+			border: solid 1px;
+			border-color: #607d8b;
+			font-family:  harrington;
+			color: #607d8b;
+			float: center; 
+			padding-left: 50px;
+
+		}
+
+		#box3{
+			width: 1310px;
+			height: 900px;
+			background: #f5f5f5;
+			font-size: 30px;
+			box-sizing: border-box;
+			border: double 5px;
+			border-color: #607d8b;
+			font-family:  harrington;
+			color: #607d8b;
+			float: right;
+
+
+
+		}
+		#box4{
+			width: 1310px;
+			height: 900px;
+			background: #f5f5f5;
+			font-size: 30px;
+			box-sizing: border-box;
+			border: double 5px;
+			border-color: #607d8b;
+			font-family:  harrington;
+			color: #607d8b;
+			float: right;
+
+
+		}
+		div.gallery :hover
+		{
+			border : 1px solid #777;
+		}
+		div.gallery img{
+			width: 100%;
+			height :auto;
+		}
+		div.desc {
+			padding : 15px ;
+			text-align: center;
+		}
+		ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden; 
+			background-color: #333;
+		}
+		li{
+			float : left;
+		}
+		li a, .dropbtn{
+
+			display:block;
+			color: #607d8b;
+			text-align: left;
+			padding : 14px 16px;
+			text-decoration: none;
+		}
+		li a:hover, .dropdowmn:hover .dropbtn {
+			background-color: white;
+		}
+
+/*li:last-child
+{
+	border-bottom: none;
+
+}
+li a.active{
+
+	background-color: #4CAF50;
+	color: white;
+}
+	li a:hover:not(.active){
+		background-color: #555;
+		color: white;
+		}*/
+
+		li.dropdown{
+
+			display: inline-block;
+
+		}
+		.dropdown-content{
+			display: none;
+			position: absolute;
+			background-color: #333;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+			text-align: center;
+
+
+
+
+		}
+		.dropdown-content a{
+
+			color: #607d8b;
+			padding :12px 16px;
+			text-decoration: none;
+			display:block; 
+			text-align : left;
+
+		}
+		.dropdown-content a:hover {background-color: #f1f1f1}
+		.dropdown:hover .dropdown-content {
+			display : block;
+		}
+
+		.header{
+
+			padding: 20px;
+			text-align: center;
+			background : #607d8b;
+			background: url(putih.jpg);
+
+
+		}
+		.header h1{
+			font-family: Harrington;
+			text-align: center;
+			font-size: 50px;
+
+
+		}
+		.leftcoloumn{
+			float: left;
+			width: 98%;
+		}
+
+		.rightcoloumn{
+			float: right;
+			width :98%;
+			background-color: #f1f1f1;
+			padding-left: 20px;
+		}
+		.fakeimg{
+			background-color: grey;
+			padding: 20px;
+			margin-top: 20px;
+
+
+
+		}
+		.row:after {
+			content :" ";
+			display : table;
+			clear : both ;
+		}
+		.footer {
+
+			padding : 20px;
+			text-align: center;
+			background: #ddd;
+			margin-top: 20px;
+		}
+		@media (max-width: 800px){
+			.leftcoloumn ,.rightcoloumn{
+
+				width :  100%;
+				padding :0;
+			}
+
+
+			}@media (max-width: 400px){
+				.topnav a{
+					text-align: center;
+					float:none;
+					width: 100%;
+
+				}
+			}			
+			#search-box 
+			{position: relative;width: 1267px;margin: 0;}
+			#search-form 
+			{height: 8px;border: 3px solid #999;-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;border-radius: 5px;background-color: #fff;overflow: hidden; }
+				#search-text {font-size: 14px;color: #ddd; border-width: 0;background: white;}
+				#search-box input[type="text"]
+				{width: 300px; padding: 3px 0 6px 1em; color: #607d8b; outline: none;}
+				#search-button {position: absolute;top: 0;right: 0;height: 39px;
+					width: 90px;font-size: 14px;color: #fff;text-align: center;
+					line-height: 42px;border-width: 0;background-color: #607d8b; box-sizing: border-box;
+					-webkit-border-radius: 0px 5px 5px 0px;
+					-moz-border-radius: 0px 5px 5px 0px;
+					border-radius: 0px 5px 5px 0px;
+					cursor: pointer;}
+				</style>
+			</head>
+
+			<body>
+				<!--iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7932.948148467135!2d106.78479398108412!3d-6.201017790991529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6c301437d55%3A0xe695127152bd14f2!2sRocky+Rooster!5e0!3m2!1sid!2sid!4v1523285753856" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe-->
+
+					<div class ="header">
+
+						<h1 style="color: #607d8b">MangaNdi</h1>
+						<p><font style="font-family: harrington" size="5" color="#607d8b">Telusuri Tempat Makan Sesuai Kantong Anda</p>
+							<body background="putih.jpg">	
+
+
+							</div>
+							<ul>
+								<li><a href="#home">Home</a></li>
+								<li class="dropdown">
+									<a href="javascript:void(0)" class="dropbtn">MangaNdi</a>
+									<div class="dropdown-content">
+										<a href="bodo3.html">Tempat Makan Awal Bulan</a>
+										<a href="bodo4.html">Tempat Makan Pertengahan Bulan</a>
+										<a href="bodo.html">Tempat Makan Akhir Bulan</a>
+		<!--a href="#">Kulkas</a>
+			<a href="#">WC Tersumbat</a-->
+
+			</div> 
+		</li>
+		<li><a href="#MangaNdi">Pesan</a></li>
+		<li><a href=bodo5.html>Tempat Makan diSekitar</a></li>
+	
+		<li><a href="#kosong">       </a></li>
+		<li><a href="#kosong">       </a></li>
+		<li><a href="#kosong">       </a></li>
+		<li><a href="#kosong">       </a></li>
+		<li><a href="#kosong">       </a></li>
+
+		<form><div id='search-box'>
+			<form action='/search' id='search-form' method='get' target='_top'>
+				<input id='search-text' name='q' placeholder='Mau cari apa gan......' type='text' style="font-family: Harrignton">
+				<button id='search-button' type='submit' style="font-family: Hariington;"><span>Cari</span></button>
+			</form>
+
+		</ul>
+
+
+		<div class="row">
+			<div class="leftcoloumn">
+				<div class="card">
+					<!--font color="aqua" size="45" face="Harrington" style="padding-left: 150px">Trend Now </font-->
+					<h3> </h3>
+					<h3> </h3>
+					<h3> </h3>
+					<div id="box2" style="font-family: Harrington; text-align: center; font-size: 38px;">Trend Sekarang nih</div>
+					<!--h5>Warunk Upnormal, Mar 7 ,2018</h5-->
+					<h5> </h5>
+					<h5> </h5>
+
+					<div class="card">
+
+						<!--a target="_blank" href="file:///E:\Software Program\Sublime Text 3\bodo\gembus.png"-->
+
+							<iframe width="400" height="200" src="https://www.youtube.com/embed/p4VKXvuh5bQ?rel=0&amp;autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen  style="padding-left: 100px;">
+						<!--/a--></div></iframe>
+						<!--a href="https://www.google.co.id/search?rlz=1C1CHBF_enID780ID780&tbm=lcl&ei=QOLAWsGyApKevQSfgprQCA&q=warunk+upnormal+jakarta+barat&oq=warunk+upnormal+jakarta+&gs_l=psy-ab.3.2.0l5j0i203k1j0.22657.24427.0.25893.10.8.0.2.2.0.282.1062.0j2j3.5.0....0...1c.1.64.psy-ab..4.6.793...35i39k1j0i67k1.0.CJY84PlGyXI#rlfi=hd:;si:2881687396291589291;mv:!1m3!1d5784.766666398684!2d106.82920739999999!3d-6.17127505!2m3!1f0!2f0!3f0!3m2!1i566!2i70!4f13.1"><img src="map.png" width="400px" height="200px" align="right"></a--></div>
+
+						<div style="color: #607d8b; float: left; padding-left:90px;">
+							<h1>Ayam Pak Gembus</h1>
+							<h5>Siapa nih yang doyan pedas? Wah pasti banyak dong....,</h5><h5>Jangan ngaku cinta pedas kalau belum makan ke warung makan pak gembus</h5>
+							<h3>Harga...? Rp.20.000 /org  GAN!! </h3></div>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31732.217677699075!2d106.7746035549622!3d-6.193949595464237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x405b7c8111abed24!2sAyam+Gepuk+Pak+Gembus!5e0!3m2!1sid!2sid!4v1523287285065" width="400" height="200" frameborder="0" style="border:0" align="right" allowfullscreen></iframe>
+						<a href="https://www.google.co.id/maps/search/ayam+gepuk+pak+gembus+terdekat/@-6.2235631,106.7883417,14z/data=!3m1!4b1" style="size: 12px; text-decoration: none; color: #607d8b;"> Ndi gan? Klik Disini Gan --></a>
+
+							<p>__________________________________________</p>
+						</div>
+					</div>
+					</div>
+	<!--div class="card">
+		<h2>Title Heading</h2>
+		<h5>Title Description July 5 , 2018</h5>
+		<div class="fakeimg" style="height:200px;">Image</div>
+		<p>some text....</p>
+		<p>fka[wpkfaw[kfa[fkaofaogjwag</p>
+	</div>
+</div-->
+	
+
+<div class="row">
+			<div class="leftcoloumn">
+				<div class="card">
+					<!--font color="aqua" size="45" face="Harrington" style="padding-left: 150px">Trend Now </font-->
+					<h3> </h3>
+					<h3> </h3>
+					<h3> </h3>
+					<!--div id="box2" style="font-family: Harrington; text-align: center; font-size: 38px;">Trend Sekarang nih</div>
+					<!--h5>Warunk Upnormal, Mar 7 ,2018</h5-->
+					<h5> </h5>
+					<h5> </h5>
+
+					<div class="card">
+
+						<!--a target="_blank" href="file:///E:\Software Program\Sublime Text 3\bodo\uduk.png">
+
+							<img src="file:///E:\Software Program\Sublime Text 3\bodo\uduk.png" alt="Bodo" width="400px" height="200px" style="padding-left: 100px;"-->
+							<iframe width="400" height="200" src="https://www.youtube.com/embed/8CVG4zYeixk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen  style="padding-left: 100px;">
+						<!--/a--></div></iframe>
+						<!--a href="https://www.google.co.id/search?rlz=1C1CHBF_enID780ID780&tbm=lcl&ei=QOLAWsGyApKevQSfgprQCA&q=warunk+upnormal+jakarta+barat&oq=warunk+upnormal+jakarta+&gs_l=psy-ab.3.2.0l5j0i203k1j0.22657.24427.0.25893.10.8.0.2.2.0.282.1062.0j2j3.5.0....0...1c.1.64.psy-ab..4.6.793...35i39k1j0i67k1.0.CJY84PlGyXI#rlfi=hd:;si:2881687396291589291;mv:!1m3!1d5784.766666398684!2d106.82920739999999!3d-6.17127505!2m3!1f0!2f0!3f0!3m2!1i566!2i70!4f13.1"><img src="map.png" width="400px" height="200px" align="right"></a></div-->
+
+						<div style="color: #607d8b; float: left; padding-left: 90px;">
+							<h1> Nasi Uduk MC D</h1>
+							<h5>MC D mengeluarkan menu baru nih gan , yaitu Nasi Uduk dari MC D yang bisa dinikmati untuk sarapan agan - agan sekalian nih...... </h5>
+							<h3>Hanya Rp.25.000 - Rp.33.000 / org tapi hanya berlaku untuk jam 05.00-11.00 saja gan </h3>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31731.66566130998!2d106.77958683894798!3d-6.2031268407476725!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f720176d7af7%3A0x648be451f6933d6b!2sMcDonald&#39;s!5e0!3m2!1sid!2sid!4v1523474682396" width="400" height="200" align="right" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<p>_______________________________________</p>
+						</div>
+					</div>
+					</div>
+				</div>
+
+<div class="box3" style="background: white;">
+<div class="row" >
+			<div class="leftcoloumn">
+				<div class="card">
+					<!--font color="aqua" size="45" face="Harrington" style="padding-left: 150px">Trend Now </font-->
+					<h3> </h3>
+					<h3> </h3>
+					<h3> </h3>
+					<!--div id="box2" style="font-family: Harrington; text-align: center; font-size: 38px;">Trend Sekarang nih</div>
+					<!--h5>Warunk Upnormal, Mar 7 ,2018</h5-->
+					<h5> </h5>
+					<h5> </h5>
+
+					<div class="card">
+
+						<a target="_blank" href="ptx.jpg" alt="Bodo" width="400px" height="200px" style="padding-left: 60px;">
+
+							<img src="ptx.jpg" alt="Bodo" width="400px" height="200px" style="padding-left: 60px;">
+							
+						</a> </div>
+						<!--a href="https://www.google.co.id/search?rlz=1C1CHBF_enID780ID780&tbm=lcl&ei=QOLAWsGyApKevQSfgprQCA&q=warunk+upnormal+jakarta+barat&oq=warunk+upnormal+jakarta+&gs_l=psy-ab.3.2.0l5j0i203k1j0.22657.24427.0.25893.10.8.0.2.2.0.282.1062.0j2j3.5.0....0...1c.1.64.psy-ab..4.6.793...35i39k1j0i67k1.0.CJY84PlGyXI#rlfi=hd:;si:2881687396291589291;mv:!1m3!1d5784.766666398684!2d106.82920739999999!3d-6.17127505!2m3!1f0!2f0!3f0!3m2!1i566!2i70!4f13.1"><img src="map.png" width="400px" height="200px" align="right"></a></div-->
+
+						<div style="color: #607d8b; float: right;">
+							<h1>Phitix Binus</h1>
+							<h5>Suka sambal? Cobain deh phitix binus gan , banyak pilihan sambalnya juga seperti sambal Seminyak , Manado ,dll.Dijamin muantap     </h5>
+							<h3>Harga Mulai dari Rp.19.000 - Rp.25.000 / org gan  </h3>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.475494545439!2d106.7854573499686!3d-6.2008289624486075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6c3d26d54c1%3A0x3175e3dc836adbcd!2sPhitix!5e0!3m2!1sid!2sid!4v1523476459878" width="400" height="200" frameborder="0" style="border:0" allowfullscreen align="right"></iframe>
+							<p>_______________________________________</p>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+				
+
+					
+				
+
+<div class="row">
+			<div class="leftcoloumn">
+				<div class="card">
+					<!--font color="aqua" size="45" face="Harrington" style="padding-left: 150px">Trend Now </font>
+					<h3> </h3>
+					<h3> </h3>
+					<h3> </h3>
+					<div id="box2" style="font-family: Harrington; text-align: center; font-size: 38px;">Trend Sekarang nih</div>
+					<h5>Warunk Upnormal, Mar 7 ,2018</h5-->
+					<h5> </h5>
+					<h5> </h5>
+
+					<div class="card">
+
+						<!--a target="_blank" href="file:///E:\Software Program\Sublime Text 3\bodo\WU.jpg">
+
+							<img src="file:///E:\Software Program\Sublime Text 3\bodo\WU.jpg" alt="Bodo" width="400px" height="200px" style="padding-left: 100px;">
+						</a--> <iframe width="400" height="200" src="https://www.youtube.com/embed/Y0QR2MZlKfs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="padding-left: 100px;"></div></iframe>
+						<!--a href="https://www.google.co.id/search?rlz=1C1CHBF_enID780ID780&tbm=lcl&ei=QOLAWsGyApKevQSfgprQCA&q=warunk+upnormal+jakarta+barat&oq=warunk+upnormal+jakarta+&gs_l=psy-ab.3.2.0l5j0i203k1j0.22657.24427.0.25893.10.8.0.2.2.0.282.1062.0j2j3.5.0....0...1c.1.64.psy-ab..4.6.793...35i39k1j0i67k1.0.CJY84PlGyXI#rlfi=hd:;si:2881687396291589291;mv:!1m3!1d5784.766666398684!2d106.82920739999999!3d-6.17127505!2m3!1f0!2f0!3f0!3m2!1i566!2i70!4f13.1"><img src="map.png" width="400px" height="200px" align="right"></a></div-->
+
+						<div style="color: #607d8b; float: left; padding-left: 90px;">
+							<h1> Warunk Upnormal Tanjung Duren</h1>
+							<h5>Suka tempat yang nyaman beserta harga yang murah? Warunk Upnormal menyediakan itu semua dan makanan yang merakyat lho..</h5>
+							<h3>Hanya Rp.20.000 / org gan </h3>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63463.41603778474!2d106.7739666974832!3d-6.202423127143103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x27fdcf6b49ae34ab!2sWarunk+Upnormal+Tanjung+Duren!5e0!3m2!1sid!2sid!4v1523476227809" width="400" height="200" frameborder="0" style="border:0" allowfullscreen align="right"></iframe>
+							<p>_______________________________________</p>
+						</div>
+					</div>
+					</div>
+
+		<!--div id="box3">
+			<div class="row">
+		<div class="rightcoloumn">
+			<div class="card">
+				<h2>About ME</h2>
+				<div class="fakeimg" style="height:100px">Image</div>
+				<p>blbalbalbalbalbalblablabal.....</p>
+			</div>
+			<div class="card">
+				<h3>Popular Post</h3>
+				<div class="fakeimg"><p>Image</p></div>
+				<div class="fakeimg"><p>Image</p></div>
+				<div class="fakeimg"><p>Image</p></div>
+			</div>
+			<div class="card">
+				<h3>Follow Me</h3>
+				<p>Some Text</p>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<h2>Footer</h2>
+	</div>
+</div>
+
+
+
+	<div style="margin-left: 20%;padding: 1px 16px;height:1000px;"></div>
+	<h1>Fixed Full height side nav</h1>
+	<p> A background color is added to the links to show the link area </p>
+	<p>Our News..........</p!-->
+
+
+
+</body>
+
+</html>

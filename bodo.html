@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>Tempat Makan Akhir Bulan</title>
+	<meta charset="utf-8">
+<!--marquee direction="left" scrollamount="10" ><font color="black" size="3">Anak oooooooooooooom</font> </marquee>
+	<Direction Fungsinya buat arah akhir kemana , Scroll Amount buat speedny ,color buat warna dan size buat ukuran-->
+		<style>
+
+		div.gallery {
+			margin: 5px;
+			border : 1px solid #ccc;
+			float : right;
+			width :180px;
+
+
+		}
+		
+
+		#box2{
+			width: 1299px;
+			height: 50px;
+			background: #bdbdbd;
+			font-size: 30px;
+			box-sizing: border-box;
+			border: solid 1px;
+			border-color: #607d8b;
+			font-family:  harrington;
+			color: #607d8b;
+			float: center; 
+			padding-left: 50px;
+
+		}
+
+		#box3{
+			width: 1310px;
+			height: 900px;
+			background: #f5f5f5;
+			font-size: 30px;
+			box-sizing: border-box;
+			border: double 5px;
+			border-color: #607d8b;
+			font-family:  harrington;
+			color: #607d8b;
+			float: right;
+
+
+
+		}
+		#box4{
+			width: 1310px;
+			height: 900px;
+			background: #f5f5f5;
+			font-size: 30px;
+			box-sizing: border-box;
+			border: double 5px;
+			border-color: #607d8b;
+			font-family:  harrington;
+			color: #607d8b;
+			float: right;
+
+
+		}
+		div.gallery :hover
+		{
+			border : 1px solid #777;
+		}
+		div.gallery img{
+			width: 100%;
+			height :auto;
+		}
+		div.desc {
+			padding : 15px ;
+			text-align: center;
+		}
+		ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden; 
+			background-color: #333;
+		}
+		li{
+			float : left;
+		}
+		li a, .dropbtn{
+
+			display:block;
+			color: #607d8b;
+			text-align: left;
+			padding : 14px 16px;
+			text-decoration: none;
+		}
+		li a:hover, .dropdowmn:hover .dropbtn {
+			background-color: white;
+		}
+
+/*li:last-child
+{
+	border-bottom: none;
+
+}
+li a.active{
+
+	background-color: #4CAF50;
+	color: white;
+}
+	li a:hover:not(.active){
+		background-color: #555;
+		color: white;
+		}*/
+
+		li.dropdown{
+
+			display: inline-block;
+
+		}
+		.dropdown-content{
+			display: none;
+			position: absolute;
+			background-color: #333;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+			text-align: center;
+
+
+
+
+		}
+		.dropdown-content a{
+
+			color: #607d8b;
+			padding :12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align : left;
+
+		}
+		.dropdown-content a:hover {background-color: #f1f1f1}
+		.dropdown:hover .dropdown-content {
+			display : block;
+		}
+
+		.header{
+
+			padding: 20px;
+			text-align: center;
+			background :#607d8b;
+			background: url(putih.jpg);
+
+
+		}
+		.header h1{
+			font-family: Harrington;
+			text-align: center;
+			font-size: 50px;
+
+
+		}
+		.leftcoloumn{
+			float: left;
+			width: 98%;
+		}
+
+		.rightcoloumn{
+			float: right;
+			width :98%;
+			background-color: #f1f1f1;
+			padding-left: 20px;
+		}
+		.fakeimg{
+			background-color: grey;
+			padding: 20px;
+			margin-top: 20px;
+
+
+
+		}
+		.row:after {
+			content :" ";
+			display : table;
+			clear : both ;
+		}
+		.footer {
+
+			padding : 20px;
+			text-align: center;
+			background: #ddd;
+			margin-top: 20px;
+		}
+		@media (max-width: 800px){
+			.leftcoloumn ,.rightcoloumn{
+
+				width :  100%;
+				padding :0;
+			}
+
+
+			}@media (max-width: 400px){
+				.topnav a{
+					text-align: center;
+					float:none;
+					width: 100%;
+
+				}
+			}			
+			#search-box 
+			{position: relative;width: 1267px;margin: 0;}
+			#search-form 
+			{height: 8px;border: 3px solid #999;-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;border-radius: 5px;background-color: #fff;overflow: hidden; }
+				#search-text {font-size: 14px;color: #ddd; border-width: 0;background: white;}
+				#search-box input[type="text"]
+				{width: 300px; padding: 3px 0 6px 1em; color: #607d8b; outline: none;}
+				#search-button {position: absolute;top: 0;right: 0;height: 39px;
+					width: 90px;font-size: 14px;color: #fff;text-align: center;
+					line-height: 42px;border-width: 0;background-color: #607d8b; box-sizing: border-box;
+					-webkit-border-radius: 0px 5px 5px 0px;
+					-moz-border-radius: 0px 5px 5px 0px;
+					border-radius: 0px 5px 5px 0px;
+					cursor: pointer;}
+				</style>
+			</head>
+
+			<body>
+
+			
+
+
+					
+
+
+				<div id="box3">
+					<div class ="header">
+
+						<h1 style="color: #607d8b">MangaNdi</h1>
+						<p><font style="font-family: harrington" size="5" color="#607d8b">Telusuri Tempat Makan Sesuai Kantong Anda</p>
+							<body background="putih.jpg">	
+
+
+							</div>
+							<ul>
+								<li><a href="bodo2.html">Home</a></li>
+								<li class="dropdown">
+									<a href="javascript:void(0)" class="dropbtn">Benahi</a>
+									<div class="dropdown-content">
+										<a href="bodo3.html">Tempat Makan Awal Bulan</a>
+										<a href="bodo4.html">Tempat Makan Pertengahan Bulan</a>
+										<a href="#">Tempat Makan Akhir Bulan</a>
+		<!--a href="#">Kulkas</a>
+			<a href="#">WC Tersumbat</a-->
+
+			</div> 
+		</li>
+		<li><a href="#MangaNdi">Pesan</a></li>
+		<li><a href="bodo5.html">Tempat Makan diSekitar</a></li>
+	
+		<li><a href="#kosong">       </a></li>
+		<li><a href="#kosong">       </a></li>
+		<li><a href="#kosong">       </a></li>
+		<li><a href="#kosong">       </a></li>
+		<li><a href="#kosong">       </a></li>
+
+		<form><div id='search-box'>
+			<form action='/search' id='search-form' method='get' target='_top'>
+				<input id='search-text' name='q' placeholder='Mau cari apa gan......' type='text' style="font-family: Harrignton">
+				<button id='search-button' type='submit' style="font-family: Hariington;"><span>Cari</span></button>
+			</form>
+
+		</ul>
+
+
+		<div class="row">
+			<div class="leftcoloumn">
+				<div class="card">
+					<!--font color="aqua" size="45" face="Harrington">Trend Now </font-->
+					<h3> </h3>
+					<h3> </h3>
+					<h3> </h3>
+					<div id="box2" style="font-family: Harrington; text-align: center; font-size: 38px;">Tempat makan akhir bulan</div>
+					<!--h5>Warunk Upnormal, Mar 7 ,2018</h5-->
+					<h5> </h5>
+					<h5> </h5>
+
+					<div class="card">
+
+						<a target="_blank" href="rocky.png">
+
+							<img src="rocky.png" alt="Bodo" width="400px" height="200px" style="padding-left: 240px;">
+						</a></div>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7932.948148467135!2d106.78479398108412!3d-6.201017790991529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6c301437d55%3A0xe695127152bd14f2!2sRocky+Rooster!5e0!3m2!1sid!2sid!4v1523285753856" width="400" height="250" frameborder="0" style="border:0" allowfullscreen align="right"></iframe></div>
+
+						<div style="color: #607d8b; float: right; padding-right: 170px;">
+							<h1> Rocky Rooster</h1>
+							<h3>Harga Sekitar Rp.10.000,00 / org</h3>
+							<h3>Telepon:  0822-1615-6045 </h3>
+							<!--a href="https://www.qraved.com/jakarta/warunk-upnormal-tanjung-duren/booknow" style="size: 12px;">Pesan? Klik Disini Gan</a-->
+							<p>________________________________________</p>
+						</div>
+					</div>
+					</div>
+	<!--div class="card">
+		<h2>Title Heading</h2>
+		<h5>Title Description July 5 , 2018</h5>
+		<div class="fakeimg" style="height:200px;">Image</div>
+		<p>some text....</p>
+		<p>fka[wpkfaw[kfa[fkaofaogjwag</p>
+	</div>
+</div-->
+<div class="box3" >
+<div class="row">
+			<div class="leftcoloumn">
+				<div class="card">
+					<!--font color="aqua" size="45" face="Harrington">Trend Now </font-->
+					<h3> </h3>
+					<h3> </h3>
+					<h3> </h3>
+					
+					<!--h5>Warunk Upnormal, Mar 7 ,2018</h5-->
+					<h5> </h5>
+					<h5> </h5>
+
+					<div class="card">
+
+						<a target="_blank" href="\WU.jpg">
+
+							<img src="WU.jpg" alt="Bodo" width="400px" height="200px" style="padding-left: 240px;">
+						</a></div>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63463.41603778474!2d106.7739666974832!3d-6.202423127143103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x27fdcf6b49ae34ab!2sWarunk+Upnormal+Tanjung+Duren!5e0!3m2!1sid!2sid!4v1523476227809" width="400" height="250" frameborder="0" style="border:0" allowfullscreen align="right"></iframe></div>
+
+						<div style="color: #607d8b; float: right; padding-right: 180px;">
+							<h1> Warunk Upnormal </h1>
+							<h3>Harga Sekitar Rp.15.000,00 / org</h3>
+							<h3>Telepon:  (021) 5685045 </h3>
+							<!--a href="https://www.qraved.com/jakarta/warunk-upnormal-tanjung-duren/booknow" style="size: 12px;">Pesan? Klik Disini Gan</a-->
+							<p>_______________________________________</p>
+						</div>
+					</div>
+					</div>
+
+
+
+<div class="box3" style="background: white">
+<div class="row">
+			<div class="leftcoloumn">
+				<div class="card">
+					<!--font color="aqua" size="45" face="Harrington">Trend Now </font-->
+					<h3> </h3>
+					<h3> </h3>
+					<h3> </h3>
+					
+					<!--h5>Warunk Upnormal, Mar 7 ,2018</h5-->
+					<h5> </h5>
+					<h5> </h5>
+
+					<div class="card">
+
+						<a target="_blank" href="Gembus.png">
+
+							<img src="Gembus.png" alt="Bodo" width="400px" height="200px" style="padding-left: 240px;">
+						</a></div>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31732.217677699075!2d106.7746035549622!3d-6.193949595464237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x405b7c8111abed24!2sAyam+Gepuk+Pak+Gembus!5e0!3m2!1sid!2sid!4v1523287285065" width="400" height="250" frameborder="0" style="border:0" align="right" allowfullscreen></iframe></div>
+
+						<div style="color: #607d8b; float: right; padding-right: 90px;">
+							<h1> Ayam Gepuk Pak Gembus</h1>
+							<h3>Harga Sekitar Rp.20.000,00 / org</h3>
+							<h3>Telepon:  0857-7564-4322 </h3>
+							<!--a href="https://www.qraved.com/jakarta/warunk-upnormal-tanjung-duren/booknow" style="size: 12px;">Pesan? Klik Disini Gan</a-->
+						<p>_______________________________________</p>
+						</div>
+					</div>
+					</div>
+				</div>
+
+					
+				<!--div class="card">
+					<h2>Title Heading</h2>
+					<h5>Title Description July 5 , 2018</h5>
+					<div class="fakeimg" style="height:200px;">Image</div>
+					<p>some text....</p>
+					<p>fka[wpkfaw[kfa[fkaofaogjwag</p>
+				</div>
+			</div-->
+
+<div class="box3">
+<div class="row">
+			<div class="leftcoloumn">
+				<div class="card">
+					<!--font color="aqua" size="45" face="Harrington">Trend Now </font-->
+					<h3> </h3>
+					<h3> </h3>
+					<h3> </h3>
+					
+					<!--h5>Warunk Upnormal, Mar 7 ,2018</h5-->
+					<h5> </h5>
+					<h5> </h5>
+
+					<div class="card">
+
+						<a target="_blank" href="milie.jpg">
+
+							<img src="milie.jpg" alt="Bodo" width="400px" height="200px" style="padding-left: 240px;">
+						</a></div>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4776336359637!2d106.78415544996854!3d-6.200544562445928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6c25346f7d5%3A0x180d63f7de5e1563!2sMister+Lie!5e0!3m2!1sid!2sid!4v1523476958572" width="400" height="250" frameborder="0" style="border:0" allowfullscreen align="right"></iframe></div>
+
+						<div style="color: #607d8b; float: right; padding-right: 180px;">
+							<h1> Mister Lie</h1>
+							<h3>Harga Sekitar Rp.20.000,00 / org</h3>
+							<h3>Telepon:  none </h3>
+							<!--a href="https://www.qraved.com/jakarta/warunk-upnormal-tanjung-duren/booknow" style="size: 12px;">Pesan? Klik Disini Gan</a-->
+							<p>_______________________________________</p>
+						</div>
+					</div>
+					</div>
+
+		<!--div id="box3">
+			<div class="row">
+		<div class="rightcoloumn">
+			<div class="card">
+				<h2>About ME</h2>
+				<div class="fakeimg" style="height:100px">Image</div>
+				<p>blbalbalbalbalbalblablabal.....</p>
+			</div>
+			<div class="card">
+				<h3>Popular Post</h3>
+				<div class="fakeimg"><p>Image</p></div>
+				<div class="fakeimg"><p>Image</p></div>
+				<div class="fakeimg"><p>Image</p></div>
+			</div>
+			<div class="card">
+				<h3>Follow Me</h3>
+				<p>Some Text</p>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<h2>Footer</h2>
+	</div>
+</div>
+
+
+
+	<div style="margin-left: 20%;padding: 1px 16px;height:1000px;"></div>
+	<h1>Fixed Full height side nav</h1>
+	<p> A background color is added to the links to show the link area </p>
+	<p>Our News..........</p!-->
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style>
+
+	div.gallery {
+margin: 5px;
+border : 1px solid #ccc;
+float : left;
+width :180px;
+
+	}
+	div.gallery :hover
+	{
+		border : 1px solid #777;
+	}
+	div.gallery img{
+		width: 100%;
+		height :auto;
+	}
+	div.desc {
+		padding : 15px ;
+		text-align: center;
+	}
+	ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden; 
+		background-color: #333;
+		}
+		li{
+		float : left;
+	}
+	li a, .dropbtn{
+
+		display:block;
+		color: aqua;
+		text-align: left;
+		padding : 14px 16px;
+		text-decoration: none;
+	}
+	li a:hover, .dropdowmn:hover .dropbtn {
+		background-color: white;
+	}
+	
+	/*li:last-child
+	{
+		border-bottom: none;
+
+	}
+	li a.active{
+
+		background-color: #4CAF50;
+		color: white;
+	}
+		li a:hover:not(.active){
+			background-color: #555;
+			color: white;
+		}*/
+
+		li.dropdown{
+
+			display: inline-block;
+		}
+		.dropdown-content{
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+
+
+
+
+		}
+		.dropdown-content a{
+
+			color: aqua;
+			padding :12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align : left;
+
+		}
+		.dropdown-content a:hover {background-color: #f1f1f1}
+		.dropdown:hover .dropdown-content {
+			display : block;
+		}
+
+		.header{
+			padding: 30px;
+			text-align: center;
+			background : #76ffff;
+
+
+		}
+		.header h1{
+font-size: 50px;
+
+
+		}
+		.leftcoloumn{
+			 float: left;
+			 width: 75%;
+			}
+
+.rightcoloumn{
+	float: left;
+	width :25%;
+	background-color: #f1f1f1;
+	padding-left: 20px;
+}
+.fakeimg{
+	background-color: grey;
+	padding: 20px;
+	margin-top: 20px;
+
+
+
+}
+.row:after {
+	content :" ";
+	display : table;
+	clear : both ;
+}
+.footer {
+
+	padding : 20px;
+	text-align: center;
+	background: #ddd;
+	margin-top: 20px;
+}
+@media (max-width: 800px){
+	.leftcoloumn ,.rightcoloumn{
+
+		widht : 100%;
+		padding :0;
+	}
+
+
+}@media (max-width: 400px){
+	.topnav a{
+		float:none;
+		width: 100%;
+
+	}
+}
+
+	</style>
+	</head>
+<body>
+
+	<body background="food.jpg">
+	<div class ="header">
+		<h1>MangaNdi</h1>
+		<p>Telusuri tempat makan terdekat sesuai dengan kantong </p>
+	</div>
+	<ul>
+		<li><a href="#home">Home</a></li>
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn">MangaNdi</a>
+		<div class="dropdown-content">
+			<a href="#">Tempat makan awal bulan </a>
+			<a href="#">Tempat makan akhir bulan </a>
+			<a href="#">Tempat makan bersama</a>
+		</div> 
+	</li>
+	<li><a href="#MangaNdi">Pesan</a></li>
+		<li><a href="#contact">Tempat makan sekitar</a></li>
+	
+
+	</ul>
+	<div class="row">
+		<div class="leftcoloumn">
+			<div class="card">
+				<h2>Daftar Tempat Makan Jakarta Barat</h2>
+				<h5>   </h5>
+								<h5>   </h5>
+				<h5>   </h5>
+				<h5>   </h5>
+				<h5>   </h5>
+				<h5>1.Warunk Upnormal</h5>
+				<a href="https://www.warunkupnormal.com/">Visit To Warunk Upnormal </a>
+
+				<div class="card">
+		<a target="_blank" href="WU.jpg">
+			<img src="WU.jpg" alt="Ntah" width="400" height="200">
+		</a>Image</div>
+				<p>Some t...</p>
+				<p>pjagpjawpogjagja]wjgp[aiwjgaowjgaw[ogjwap</p>
+			</div>
+		<div class="card">
+			<h2>Title Heading</h2>
+			<h5>Title Description July 5 , 2018</h5>
+			<div class="fakeimg" style="height:200px;">Image</div>
+			<p>some text....</p>
+			<p>fka[wpkfaw[kfa[fkaofaogjwag</p>
+		</div>
+	</div>
+		<div class="rightcoloumn">
+			<div class="card">
+				<h2>About ME</h2>
+				<div class="fakeimg" style="height:100px">Image</div>
+				<p>blbalbalbalbalbalblablabal.....</p>
+			</div>
+			<div class="card">
+				<h3>Popular Post</h3>
+				<div class="fakeimg"><p>Image</p></div>
+				<div class="fakeimg"><p>Image</p></div>
+				<div class="fakeimg"><p>Image</p></div>
+			</div>
+			<div class="card">
+				<h3>Follow Me</h3>
+				<p>Some Text</p>
+			</div>
+		</div>
+	</div>
+<div class="footer">
+	<h2>Footer</h2>
+</div>
+
+
+
+	<div style="margin-left: 20%;padding: 1px 16px;height:1000px;">
+		<h1>Fixed Full height side nav</h1>
+<p> A background color is added to the links to show the link area </p>
+<p>Our News..........</p>
+
+
+</body>
+</html>
